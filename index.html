@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="./assets/weatherNow_favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/weatherNow_favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/weatherNow_favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/weatherNow_favicon/site.webmanifest"> -->
+    <link rel="icon" href="4fe790abca40e10a5cad.ico" type="image/x-icon">
+    <title>Weather Now</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css"> -->
+
+    <!-- <script type="module" src="index.js"></script> -->
+
+<script defer src="main.js"></script></head>
+
+<body>
+    <div id="all">
+        <div id="header">
+            <div id="logo-section">Weather Now</div>
+            <div id="form-section">
+                <form id="location-form" autocomplete="off">
+                    <label for="location">Weather Now in: </label>
+                    <input type="text" name="location" id="location" required minlength="2" placeholder="Enter  Location?!">
+                </form>
+            </div>
+        </div>
+
+        <div id="weather-info-display">
+            <div id="location-display">Location: </div>
+            <div id="coordinates"></div>
+            <div id="time-and-date">
+                <div id="current-time">Now: </div>
+                <div id="current-date">Date: </div>
+            </div>
+            <div id="main-weather-feature">Weather Feature: </div>
+            <div id="temperature">Temperature: </div>
+            <div id="precipitation">Precipitation: </div>
+            <div id="weather-icon-div">
+                <i id="weather-icon" class="wi wi-na"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
