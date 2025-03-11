@@ -1,0 +1,318 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+:root {
+    /* Sunny and Bright ☀️ */
+    --sunny-primary: #FFD700;       /* Golden Yellow */
+    --sunny-secondary: #FF8C00;     /* Dark Orange */
+    --sunny-accent: #87CEEB;        /* Sky Blue */
+    --sunny-background: #FFF8DC;    /* Cornsilk */
+    --sunny-text: #333333;          /* Dark Gray */
+
+    /* Cool and Cloudy ☁️ */
+    --cloudy-primary: #B0C4DE;      /* Light Steel Blue */
+    --cloudy-secondary: #708090;    /* Slate Gray */
+    --cloudy-accent: #FF4500;       /* Orange Red */
+    --cloudy-background: #F0F8FF;   /* Alice Blue */
+    --cloudy-text: #2F4F4F;         /* Dark Slate Gray */
+
+    /* Stormy and Intense ⚡ */
+    --stormy-primary: #1C1C1C;      /* Very Dark Gray */
+    --stormy-secondary: #4682B4;    /* Steel Blue */
+    --stormy-accent: #FFD700;       /* Gold */
+    --stormy-background: #2F4F4F;   /* Dark Slate Gray */
+    --stormy-text: #E0E0E0;         /* Light Gray */
+
+    /* Fresh and Rainy 🌧️ */
+    --rainy-primary: #4A90E2;       /* Rainy Blue */
+    --rainy-secondary: #6E7F80;     /* Misty Gray */
+    --rainy-accent: #50C878;        /* Emerald Green */
+    --rainy-background: #E6F7FF;    /* Soft Blue */
+    --rainy-text: #2B3A42;          /* Charcoal */
+
+    /* Warm and Sunset 🌅 */
+    --sunset-primary: #FF6347;      /* Tomato Red */
+    --sunset-secondary: #FF7F50;    /* Coral */
+    --sunset-accent: #FFDAB9;       /* Peach Puff */
+    --sunset-background: #FFF5EE;   /* Seashell */
+    --sunset-text: #4B2E2E;         /* Dark Brown */
+
+    /* Frosty and Wintery ❄️ */
+    --winter-primary: #00CED1;      /* Dark Turquoise */
+    --winter-secondary: #4682B4;    /* Steel Blue */
+    --winter-accent: #B0E0E6;       /* Powder Blue */
+    --winter-background: #F0FFFF;   /* Azure */
+    --winter-text: #333333;         /* Dark Gray */
+
+    
+    /* Snow - Light Blue & White */
+    --snow-primary: #dbeafe; /* Light Blue */
+    --snow-text: #ffffff; /* White */
+
+    /* Snow Showers (Day) - Soft Gray & White */
+    --snow-showers-day-primary: #cbd5e1; /* Soft Gray */
+    --snow-showers-day-text: #ffffff; /* White */
+
+    /* Snow Showers (Night) - Dark Blue & White */
+    --snow-showers-night-primary: #334155; /* Dark Blue */
+    --snow-showers-night-text: #e0f2fe; /* Light Cyan */
+
+    /* Thunderstorm with Rain - Deep Purple & Yellow */
+    --thunder-rain-primary: #4c1d95; /* Deep Purple */
+    --thunder-rain-text: #facc15; /* Yellow */
+
+    /* Thunder Showers (Day) - Dark Gray & Yellow */
+    --thunder-showers-day-primary: #475569; /* Dark Gray */
+    --thunder-showers-day-text: #facc15; /* Yellow */
+
+    /* Thunder Showers (Night) - Dark Navy & Lightning Yellow */
+    --thunder-showers-night-primary: #1e293b; /* Dark Navy */
+    --thunder-showers-night-text: #fbbf24; /* Lightning Yellow */
+
+    /* Rain - Deep Blue & White */
+    --rain-primary: #1e40af; /* Deep Blue */
+    --rain-text: #ffffff; /* White */
+
+    /* Showers (Day) - Light Blue & White */
+    --showers-day-primary: #93c5fd; /* Light Blue */
+    --showers-day-text: #ffffff; /* White */
+
+    /* Showers (Night) - Deep Blue & Light Blue */
+    --showers-night-primary: #1e3a8a; /* Deep Blue */
+    --showers-night-text: #93c5fd; /* Light Blue */
+
+    /* Fog - Gray & White */
+    --fog-primary: #9ca3af; /* Gray */
+    --fog-text: #f3f4f6; /* Light Gray */
+
+    /* Wind - Light Teal & White */
+    --wind-primary: #14b8a6; /* Light Teal */
+    --wind-text: #ffffff; /* White */
+
+    /* Cloudy - Dark Gray & Light Gray */
+    --cloudy-primary: #64748b; /* Dark Gray */
+    --cloudy-text: #e2e8f0; /* Light Gray */
+
+    /* Partly Cloudy (Day) - Blue & Light Yellow */
+    --partly-cloudy-day-primary: #60a5fa; /* Blue */
+    --partly-cloudy-day-text: #fde047; /* Light Yellow */
+
+    /* Partly Cloudy (Night) - Dark Blue & Gray */
+    --partly-cloudy-night-primary: #1e293b; /* Dark Blue */
+    --partly-cloudy-night-text: #d1d5db; /* Gray */
+
+    /* Clear Day - Bright Blue & Sun Yellow */
+    --clear-day-primary: #3b82f6; /* Bright Blue */
+    --clear-day-text: #facc15; /* Sun Yellow */
+
+    /* Clear Night - Deep Navy & White */
+    --clear-night-primary: #0f172a; /* Deep Navy */
+    --clear-night-text: #e2e8f0; /* Light Gray */
+}
+
+body {
+    background-color: var(--sunny-background);
+}
+
+#all {
+    width: 100%;
+    height: 100vh;
+}
+
+#header {
+    width: 100%;
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    color: white;
+    background: url(./assets/images/yue-su-YAXSmnTcAh8-unsplash.jpg);
+}
+
+
+#logo-section {
+    margin-bottom: 48px;
+    align-self: flex-start;
+    font-family: 'merriweatherbold';
+    font-size: 24px;
+}
+
+#form-section {
+    width: 70%;
+    align-self: center;
+    font-family: 'merriweatherregular';
+    padding: 12px;
+}
+
+#form-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 24px;
+}
+
+#location {
+    width: 60%;
+    outline: 0;
+    border: 2px solid #365C8D;
+    padding-left: 24px;
+    border-radius: 26px;
+    height: 48px;
+    font-size: 18px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+
+#weather-info-display {
+    border: 4px solid #365C8D;
+    width: 500px;
+    height: 360px;
+    margin: 60px auto;
+    background-color: white;
+    font-style: 'merriweatherregular';
+    font-size: 22px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* color: blue; */
+}
+
+#time-and-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#weather-icon-div {
+    margin: 0 auto;
+    font-size: 42px;
+}
+
+/* #weather-icon {
+    width: 72px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+} */
+
+#coordinates {
+    align-self: center;
+    font-size: 14px;
+    font-family: 'merriweatherregular';
+    font-weight: bold;
+    white-space: pre; /* Preserves all spaces and line breaks */
+}
+
+#location-display {
+    align-self: center;
+}
+
+
+/* Snowy Weather */
+.snow { background: radial-gradient(circle, var(--snow-primary), var(--snow-text)); }
+.snow-showers-day { background: radial-gradient(circle, var(--snow-showers-day-primary), var(--snow-showers-day-text)); }
+.snow-showers-night { background: radial-gradient(circle, var(--snow-showers-night-primary), var(--snow-showers-night-text)); }
+
+/* Thunderstorm Weather */
+.thunder-rain { background: radial-gradient(circle, var(--thunder-rain-primary), var(--thunder-rain-text)); }
+.thunder-showers-day { background: radial-gradient(circle, var(--thunder-showers-day-primary), var(--thunder-showers-day-text)); }
+.thunder-showers-night { background: radial-gradient(circle, var(--thunder-showers-night-primary), var(--thunder-showers-night-text)); }
+
+/* Rainy Weather */
+.rain { background: radial-gradient(circle, var(--rain-primary), var(--rain-text)); }
+.showers-day { background: radial-gradient(circle, var(--showers-day-primary), var(--showers-day-text)); }
+.showers-night { background: radial-gradient(circle, var(--showers-night-primary), var(--showers-night-text)); }
+
+/* Fog and Wind */
+.fog { background: radial-gradient(circle, var(--fog-primary), var(--fog-text)); }
+.wind { background: radial-gradient(circle, var(--wind-primary), var(--wind-text)); }
+
+/* Cloudy Weather */
+.cloudy { background: radial-gradient(circle, var(--cloudy-primary), var(--cloudy-text)); }
+.partly-cloudy-day { background: radial-gradient(circle, var(--partly-cloudy-day-primary), var(--partly-cloudy-day-text)); }
+.partly-cloudy-night { background: radial-gradient(circle, var(--partly-cloudy-night-primary), var(--partly-cloudy-night-text)); }
+
+/* Clear Weather */
+.clear-day { background: radial-gradient(circle, var(--clear-day-primary), var(--clear-day-text)); }
+.clear-night { background: radial-gradient(circle, var(--clear-night-primary), var(--clear-night-text)); }
+
+
+.wi {
+    color: blue;
+    /* background: yellow; */
+}
+
+
